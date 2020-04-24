@@ -1,4 +1,4 @@
-## The practice of programming
+## The Practice of Programming
 
 This repository contains the exercises from the book "The Practice of Programming" by Brian W. Kernighan and Rob Pike.
 
