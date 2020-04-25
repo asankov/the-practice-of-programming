@@ -264,27 +264,9 @@ public class Main {
             if (intArrayObject[i].intValue() != intArrayGeneric[i].intValue())
                 throw new RuntimeException("array values differ");
 
-        /*
-         * Exercise 2-2. Our Java quicksort does a fair amount of type conversion as
-         * iterm are cast from their original type (like Integer) to Object and back
-         * again. Experiment with a version of QuickSort.sort that uses the specific
-         * type being sorted, to estimate what performance penalty is incurred by type
-         * conversions.
-         */
         System.out.println("ObjectQuickSorter took " + (objectSorterEnd - objectSorterStart) + " ms");
         System.out.println("GenericQuickSorter<Integer> took " + (genericSorterEnd - genericSorterStart) + " ms");
         System.out.println("IntegerQuickSorter took " + (integerSorterEnd - integerSorterStart) + " ms");
-        /*
-         * Conclusions: results from executing the following code were:
-         *    ObjectQuickSorter took 5 ms 
-         *    GenericQuickSorter<Integer> took 13 ms
-         *    IntegerQuickSorter took 3 ms
-         * 
-         * Therefore the generic sorter is the slowest one and the type specific one
-         * (IntegerQuickSorter) is the quickest one. The difference between
-         * IntegerQuickSorter and ObjectQuickSorter is much smaller that the difference
-         * between these two and GenericQuickSorter.
-         */
 
         System.out.println("SUCCESS.");
     }
