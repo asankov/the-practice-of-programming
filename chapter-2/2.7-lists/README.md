@@ -7,7 +7,7 @@ Implement some of the other list operations: copy, merge, split, insert before o
 How do the two insertion operations differ in difficulty? How much can you use the routines we've written,
 and how much must you create yourself?
 
-*Answer:* The solution can be found in `chapter-2/2.7-lists/lists.c`.
+*Answer:* The solution can be found in [`chapter-2/2.7-lists/lists.c`](lists.c).
 - Copying - the `copy` function. That is simply straight forward as it initializes a new list and start adding
 copies of the element of the old list to the new one. For the purpose we can reuse the `newitem` function,
 which create a new element.
@@ -20,3 +20,9 @@ together via the `addend` function. Neat.
 - Insert after - the `insert_after` function. In this we iterate over the elements of the passed list, until we find the matching one.
 The make this point to the next from the original list, and the previous one points to the new element to be inserted.
 In this function we don't reuse any of the other ones, because it's just pointer changes and comparisons.
+
+#### Exercise 2-8
+Write recursive and iterative versions of `reverse`, which reverses a list. 
+Do not create new list items; re-use the existing ones.
+
+*Answer:* The solution can be found in [`chapter-2/2.7-lists/reverse.c`](reverse.c)
