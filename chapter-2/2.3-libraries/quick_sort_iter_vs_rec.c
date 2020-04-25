@@ -1,8 +1,3 @@
-/*
-Exercise 2.1. Quicksort is most naturally expressed recursively. 
-              Write it iteratatively and compare the two versions.
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "values.c"
