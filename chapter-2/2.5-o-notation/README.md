@@ -20,7 +20,9 @@ that indeed the bigger difference encoutered when comparing the same algorithm w
 was that when this input wah in the last 3 categories(arrays with all values equal, arrays with all values 
 equal but one, arrays sorted in reverse order)
 
-#### Exercies 2.4
+The implentation can be found in [`quick_sort_worst_cases.c`](quick_sort_worst_cases.c).
+
+#### Exercise 2.4
 Design and implement an algorithm that will sort an array of *n* integers as slowly as possible.
 You have to play fair: the algorithm must make progress and eventually terminate, and the implementation
 must not cheat with tricks like time-wasting loops. What is the complexity of your algorithm as a function of *n*?
@@ -31,3 +33,5 @@ the elements of the array. The complexity of this is *O(n^2)*, because adding on
 
 Another one that could be even slower that this one, would be one that tries all possible combinations to see if an array is sorted.
 The complexity of that would be *O(2^n)*, because adding an element, would mean twice as more operations.
+
+The implementation can be found at [`slow_sort.c`](slow_sort.c)
