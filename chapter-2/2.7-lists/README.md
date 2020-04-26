@@ -26,3 +26,18 @@ Write recursive and iterative versions of `reverse`, which reverses a list.
 Do not create new list items; re-use the existing ones.
 
 *Answer:* The solution can be found in [`chapter-2/2.7-lists/reverse.c`](reverse.c)
+
+#### Exercise 2-9
+Write a generic List type for C. The easiest way is to have each list item hold a `void*` that points to the data.
+Do the same for C++ by defining a template and for Java by defining a class that holds lists of type Object.
+What are the strenght and weaknesses of the various languages for this job?
+
+*Answer:* The solutions can be found at [`generic_lists`](generic_lists).
+- The C solution is really weird, because in order to achieve generic list, we must use `void*`.
+That means that the type-checking responsibility is switched from the compiler, to the consumer of the list.
+Also, while trying it off it produces some warning of the sort `[-Wincompatible-pointer-types]`.
+So it should be compiled with flags to ignore this warning. All in all, I think that it is better if the
+consumers would implement their own list, instead of using this generic one.
+- C++ solution - TODO
+- Java solution - in Java this is pretty much implemented with `List<T>` and all of its implementations,
+so I'd rather not spend time reimplementing those or implementing wrappers around them.
