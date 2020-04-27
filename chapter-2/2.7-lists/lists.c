@@ -16,7 +16,7 @@ void printnv(Nameval *p, void *arg);
 Nameval *newitem(char *name, int value);
 void incounter(Nameval *listp, void *arg);
 Nameval *lookup(Nameval *listp, char *name);
-void delitem(Nameval *listp, char *name);
+int delitem(Nameval *listp, char *name);
 Nameval *merge(Nameval *list, Nameval *other);
 Nameval *addend(Nameval *listp, Nameval *newp);
 Nameval *addfront(Nameval *listp, Nameval *newp);
@@ -76,7 +76,7 @@ Nameval *lookup(Nameval *listp, char *name)
     return NULL; /* no mathc found */
 }
 
-void delitem(Nameval *listp, char *name)
+int delitem(Nameval *listp, char *name)
 {
     Nameval *prev = NULL;
     for (Nameval *p = listp; p != NULL; p = p->next)
@@ -88,11 +88,11 @@ void delitem(Nameval *listp, char *name)
             else
                 listp->next = p->next;
             free(p);
-            return;
+            return 1;
         }
         prev = p;
     }
-    printf("element not found in list");
+    return 0;
 }
 
 /* freeall: destroy the list */
