@@ -41,3 +41,21 @@ consumers would implement their own list, instead of using this generic one.
 - C++ solution - TODO
 - Java solution - in Java this is pretty much implemented with `List<T>` and all of its implementations,
 so I'd rather not spend time reimplementing those or implementing wrappers around them.
+
+#### Exercise 2-10
+Devise and implement a set of tests for verifying that the list routines you write are correct.
+Chapter 6 discusses strategies for testing.
+
+*Answer:* The solution can be found at [`tests.c`](tests.c).
+
+I came up with mini test framework, where all of the tests are executed in the `int main()` function.
+The framework consists of a generic `int test(int (*fn)(Nameval *), char *description)` function, which accepts as arguments:
+- `int (*fn)(Nameval *)` - the function where the actual test is executed. It accepts a list as a parameter
+and returns an integer. It accepts a list, so that the test invoker is responsible for constructing the input data and cleaning it afterwards.
+It returns integer to indicate whether the test has executed succesfully or not. 
+- `char * description` is the description of the test that is to be executed.
+
+Will this in place, `main` invokes `test` once for each test method we have. The test is executed and a
+response code is returned. If the response code is error, `test` displays an error message, 
+if it is a success - it displays a success message and it propagates the code further on. 
+This allows us to aggregate all error codes in `main` and display the number of failing tests (because all error code are `1` ATM).
