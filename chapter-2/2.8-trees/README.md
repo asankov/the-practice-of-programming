@@ -18,3 +18,14 @@ Recursive function took 0 s, 316 ns
 This means that with this amount of data, the iterative function is ~33% faster than the recursive one.
 However, these results are not to be taken as conclusive, because the amount of data we test it is really small,
 and I suspect that the way we measure time is not entirely accurate as well.
+
+#### Exercise 2.12.
+Use in-order traversal to create a sort routine. What time complexity does it have? 
+Under what conditions might it behave poorly? How does its performance compare to our quicksort and a library version?
+
+*Answer:* The implementation can be found at [`sort.c`](sort.c).
+The time complexity should be *O(log n)*, however, in the end, all elements need to be traversed, so that
+they can be printed(written), so that leeds me to think the complexity would be *O(n)*.
+The performance depends on the structure of the tree. For a properly structured tree it should always
+perform in the same manner. 
+TODO: execute a proper performance tests againts the list quicksort.
