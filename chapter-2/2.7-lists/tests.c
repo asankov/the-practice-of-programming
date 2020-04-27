@@ -5,7 +5,50 @@ char *names[] = {
     "Pesho",
     "Bai Tosho"};
 
+int test(int (*fn)(Nameval *), char *description);
 int assert_list(Nameval *list, char **expected_names, int expected_names_size);
+
+int test_addend(Nameval *list);
+int test_addfront(Nameval *list);
+int test_insert_after(Nameval *list);
+int test_insert_after_noexist(Nameval *list);
+int test_insert_after_noexist(Nameval *list);
+int test_insert_before(Nameval *list);
+int test_insert_before_noexist(Nameval *list);
+int test_merge(Nameval *list);
+int test_merge_null(Nameval *list);
+int test_delitem(Nameval *list);
+int test_delitem_noexist(Nameval *list);
+int test_lookup(Nameval *list);
+int test_lookup_noexist(Nameval *list);
+int test_copy(Nameval *list);
+int test_apply_incounter(Nameval *list);
+
+int main()
+{
+    int res = 0;
+    res += test(test_addend, "Adding element to the end of the list.");
+    res += test(test_addfront, "Adding element to the front of the list.");
+    res += test(test_insert_after, "Adding element after a certain element.");
+    res += test(test_insert_after_noexist, "Adding element after a certain element that does not exist.");
+    res += test(test_insert_before, "Adding element before a certain element.");
+    res += test(test_insert_before_noexist, "Adding element before a certain element that does not exist.");
+    res += test(test_merge, "Merging two lists.");
+    res += test(test_merge_null, "Merging two lists, when one of the them is NULL.");
+    res += test(test_delitem, "Deleting an item from the list.");
+    res += test(test_delitem_noexist, "Deleting a non-existent item from the list.");
+    res += test(test_lookup, "Looking up an item from the list.");
+    res += test(test_lookup_noexist, "Looking up a non-existing item from the list.");
+    res += test(test_copy, "Copy a list.");
+    res += test(test_apply_incounter, "Count the element in a list, via the functions `apply` and `incounter`");
+
+    if (res == 0)
+        printf(" ✅✅✅ All the test were executed succesfully. ✅✅✅\n");
+    else
+        printf(" ❌❌❌There were %d failures❌❌❌\n", res);
+
+    return res;
+}
 
 int test_addend(Nameval *list)
 {
@@ -251,32 +294,6 @@ int test(int (*fn)(Nameval *), char *description)
         printf(" ❌ %s\n", description);
 
     freeall(list);
-
-    return res;
-}
-
-int main()
-{
-    int res = 0;
-    res += test(test_addend, "Adding element to the end of the list.");
-    res += test(test_addfront, "Adding element to the front of the list.");
-    res += test(test_insert_after, "Adding element after a certain element.");
-    res += test(test_insert_after_noexist, "Adding element after a certain element that does not exist.");
-    res += test(test_insert_before, "Adding element before a certain element.");
-    res += test(test_insert_before_noexist, "Adding element before a certain element that does not exist.");
-    res += test(test_merge, "Merging two lists.");
-    res += test(test_merge_null, "Merging two lists, when one of the them is NULL.");
-    res += test(test_delitem, "Deleting an item from the list.");
-    res += test(test_delitem_noexist, "Deleting a non-existent item from the list.");
-    res += test(test_lookup, "Looking up an item from the list.");
-    res += test(test_lookup_noexist, "Looking up a non-existing item from the list.");
-    res += test(test_copy, "Copy a list.");
-    res += test(test_apply_incounter, "Count the element in a list, via the functions `apply` and `incounter`");
-
-    if (res == 0)
-        printf(" ✅✅✅ All the test were executed succesfully. ✅✅✅\n");
-    else
-        printf(" ❌❌❌There were %d failures❌❌❌\n", res);
 
     return res;
 }
