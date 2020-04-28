@@ -29,3 +29,8 @@ they can be printed(written), so that leeds me to think the complexity would be 
 The performance depends on the structure of the tree. For a properly structured tree it should always
 perform in the same manner. 
 TODO: execute a proper performance tests againts the list quicksort.
+
+#### Exercise 2.13.
+Devise and implement a set of tests for verifying that the tree routines are correct.
+
+*Answer:* The solution can be found at [`tests.c`](tests.c). I went with the same appoarch as in Exercise 2-10.
