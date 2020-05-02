@@ -30,3 +30,27 @@ around the resizing of the map. In the end I managed to do it in the following w
 - resize the map (`realloc`)
 - recalculate the hash of all the elements in the array and insert them into the map
 That are a lot of iterations, but I am not sure if I can come up with a more elegant solution.
+
+#### Exercise 2.17
+Design a hash function for storing the coordinates of points in 2-dimensions. How easily does your function
+adapt to changes in the type of the coordinates, for example from integer to folating point or
+from Cartesian to polar coordinates, or to changes from 2 to higher dimensions?
+
+*Answer:* You can find the solution at [`coordinates.c`](coordinates.c).
+The hash function for coordinates takes into account four things:
+- the `x` part of the coordinates
+- the `y` part of the coordinates
+- the sum of `x` and `y`
+- the absolute difference of `x` and `y`
+These four are multiplied by four prime numbers and added together to compute the final hash.
+
+I decided that having the four factors is more collision-save than just the `x` and `y`, because
+this way if two combinations of `x` and `y` for which`(31 * x1) + (37 * y1) == (31 * x2) + (37 * y2)`
+yield the same value, taking into account the sum and the difference would prevent them from having the same hash.
+
+The current implementation does not care whether `x` or `y` are going to be `int`, `float`, `double` or something else. They can be anything that can be multiplied by `int`.
+
+As for Cartesian to polar - if the coordinates are numbers, the hash function will deal with them just fine.
+
+Finally, if we were to add a third point - `z`, then the `hash` function will have to be enhanced to take it into account as well.
+
