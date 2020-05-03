@@ -16,3 +16,5 @@ The book can be bought here: https://www.amazon.de/-/en/Brian-W-Kernighan-ebook/
 #### [2.7 Lists](chapter-2/2.7-lists)
 #### [2.8 Trees](chapter-2/2.8-trees)
 #### [2.9 Hash Tables](chapter-2/2.9-hash-tables)
+
+##### This work is licensed under MIT license. For more info see [LICENSE.md](LICENSE.md)
