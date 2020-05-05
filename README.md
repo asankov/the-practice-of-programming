@@ -6,6 +6,16 @@ The book can be bought here: https://www.amazon.de/-/en/Brian-W-Kernighan-ebook/
 
 ## Table of Contents
 
+### [Chapter 1: Style](chapter-1)
+
+#### [1.1 Names](chapter-1/1.1-names)
+#### [1.2 Expressions and Statements](chapter-1/1.2-expressions-and-statements)
+#### [1.3 Consistency and Idioms](chapter-1/1.3-consistency-and-idioms)
+#### [1.4 Function Macros](chapter-1/1.4-function-macros)
+#### [1.5 Magic Numbers](chapter-1/1.5-magic-numbers)
+#### [1.6 Comments](chapter-1/1.6-comments)
+#### 1.7 Why Bother?
+
 ### [Chapter 2: Algorithms and Data structures](chapter-2)
 #### [2.1 Searching](chapter-2/2.1-searching)
 #### [2.2 Sorting](chapter-2/2.2-sorting)
