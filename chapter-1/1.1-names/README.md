@@ -24,7 +24,7 @@ if ((ch = getchar()) == EOF)
 The other version may lead to double negation like `if (!not_eof) { /* code */ }` which is more confusing than the simple `if (eof) { /* code */}`.
 
 #### Exercise 1-2
-Imporve this function.
+Improve this function.
 ```c
 int smaller(char *s, char *t) {
     if (strcmp(s, t) < 1)
