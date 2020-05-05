@@ -45,3 +45,19 @@ This is simpler and obvious.
 bit = val & 1;
 ```
 This is simpler and obvious.
+
+#### Exercise 1-5
+What is wrong with this excerpt?
+```c
+int read(int *ip) {
+    scanf("%d", ip);
+    return *ip;
+}
+  ...
+insert(&graph[vert], read(&val), read(&ch));
+```
+*Answer:* The thing that is wrong with the `read` function is that it both scans the value into `ip` and returns the value.
+This seems weird, and people may find clever ways to utilize this. As we know from the book - clear is better than clever.
+The thing that is wrong with the call to `insert` comes from that problem with `read`. This statement does 3 things at the same time.
+Calls `insert` with the value, read from stdin, and assigns them to `val` and `ch` respectively. This may lead to nasty bugs
+and more hours of debugging.
