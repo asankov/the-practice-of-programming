@@ -6,4 +6,4 @@
 ### [1.4 Function Macros](1.4-function-macros)
 ### [1.5 Magic Numbers](1.5-magic-numbers)
 ### [1.6 Comments](1.6-comments)
-### 1.7 Why Bother?
+### [1.7 Why Bother?](1.7-why-bother)

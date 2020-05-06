@@ -14,7 +14,7 @@ The book can be bought here: https://www.amazon.de/-/en/Brian-W-Kernighan-ebook/
 #### [1.4 Function Macros](chapter-1/1.4-function-macros)
 #### [1.5 Magic Numbers](chapter-1/1.5-magic-numbers)
 #### [1.6 Comments](chapter-1/1.6-comments)
-#### 1.7 Why Bother?
+#### [1.7 Why Bother?](chapter-1/1.7-why-bother)
 
 ### [Chapter 2: Algorithms and Data structures](chapter-2)
 #### [2.1 Searching](chapter-2/2.1-searching)
