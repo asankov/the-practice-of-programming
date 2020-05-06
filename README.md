@@ -28,4 +28,4 @@ The book can be bought here: https://www.amazon.de/-/en/Brian-W-Kernighan-ebook/
 #### [2.9 Hash Tables](chapter-2/2.9-hash-tables)
 
 ## License
-##### This work is licensed under MIT license. For more info see [LICENSE.md](LICENSE.md)
+This work is licensed under MIT license. For more info see [LICENSE.md](LICENSE.md)
