@@ -30,7 +30,7 @@ else if (istty(stderr)) {}
 else 
     return (0);
 ```
-Here, I just added parantheses around the empty bodies of the if conditions and corrected the indentation. this should be enough to easy readability.
+Here, I just added parantheses around the empty bodies of the if conditions and corrected the indentation. This should be enough to easy readability.
 ```c
 return retval;
 ```
