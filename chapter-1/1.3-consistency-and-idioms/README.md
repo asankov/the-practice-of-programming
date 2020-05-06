@@ -42,3 +42,24 @@ for (k = 0; k < 5; k++)
 ```
 Here, I moved the incrementation of `k` to the last part of the `for` loop definition, as this is the idiomatic choice.
 Moreove, I moved `x += dx` into the body of the for loop, since this way is even clearer where `dx` is coming from and what happens with `x`. Also, now the `for` loop looks like the standart `for` that a seasoned programmer would recognise at a glance.
+
+#### Exercise 1-8
+Identify the errors in this Java fragment and repair it by rewriting with an idiomatic loop.
+```java
+int count = 0;
+while (count < total) {
+    count++;
+    if (this.getName(count) == nametable.userName()) {
+        return (true);
+    }
+}
+```
+*Answer:*
+```java
+for (int count = 0; count < total; count++) {
+    if (this.getName(count) == nametable.userName()) {
+        return (true);
+    }
+}
+```
+Not much to explain here. Making the loop idiomatic makes the code much easier to read and understand.
