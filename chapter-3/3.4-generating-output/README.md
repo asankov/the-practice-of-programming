@@ -10,7 +10,7 @@ Design and carry out experiments to determine how weel the method works in pract
 *Answer:* Running the program multiple times always produced the same output, although there are prefixes with more than
 one suffix. This means that either the random function is not fully random, or the algorithm is broken.
 
-After adding a seed, based on current time in `bf10c68f853ae3997fd445dc169443297a707fb8` the results started to vary, which
+After adding a seed, based on current time in [this commit](https://github.com/asankov/the-practice-of-programming/commit/bf10c68f853ae3997fd445dc169443297a707fb8) the results started to vary, which
 means that the problem was the random number generator.
 
 #### Exercise 3-2
