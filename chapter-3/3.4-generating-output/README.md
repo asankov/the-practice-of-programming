@@ -18,3 +18,10 @@ and memory consumption.
 
 *Answer:* This change should make the program more memory efficient, because we would be storing every string just once.
 *TODO: add implementation*
+
+#### Exercise 3-3
+Remove the statements that place sentinel `NONWORD`s at the beginning and end of the data, and modify `generate`
+so it starts and stops properly without them. Make sure it produces correct output for input with 0, 1, 2, 3 and 4 words.
+Compare the implementation to the version using sentinels.
+
+*Answer:* *TODO: add answer and implementation*
