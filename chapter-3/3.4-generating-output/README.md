@@ -10,6 +10,9 @@ Design and carry out experiments to determine how weel the method works in pract
 *Answer:* Running the program multiple times always produced the same output, although there are prefixes with more than
 one suffix. This means that either the random function is not fully random, or the algorithm is broken.
 
+After adding a seed, based on current time in `bf10c68f853ae3997fd445dc169443297a707fb8` the results started to vary, which
+means that the problem was the random number generator.
+
 #### Exercise 3-2
 If each input word is stored in a second hash table, the text is only stored once, which should save space.
 Measure some documents to estimate how much. This organization would allow us to compare pointers rather than strings
