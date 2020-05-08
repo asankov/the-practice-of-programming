@@ -1,3 +1,5 @@
+#include <time.h>
+
 #include "../3.3-building-the-data-structure-in-c/structs.c"
 
 void generate(int nwords)
@@ -48,6 +50,10 @@ int main(void)
 
     for (int i = 0; i < NPREF; i++)
         prefix[i] = NONWORD;
+
+    long seed = time(NULL);
+
+    srand(seed);
 
     FILE *f = fopen("text.txt", "r");
     if (f == NULL)
