@@ -55,8 +55,8 @@ class Chain {
             if (suf.equals(NON_WORD))
                 break;
             System.out.print(suf + " ");
-            prefix.pref.removeElementAt(0);
-            prefix.pref.addElement(suf);
+            prefix.pref[0] = prefix.pref[1];
+            prefix.pref[1] = suf;
         }
     }
 
@@ -67,8 +67,8 @@ class Chain {
             statetab.put(prefix.clone(), suf);
         }
         suf.addElement(word);
-        prefix.pref.removeElementAt(0);
-        prefix.pref.addElement(word);
+        prefix.pref[0] = prefix.pref[1];
+        prefix.pref[1] = word;
     }
 }
 
@@ -76,33 +76,33 @@ class Prefix {
 
     private static final int MULTIPLIER = 31;
 
-    public Vector<String> pref;
+    public String[] pref;
 
     public static Prefix from(Integer size, String value) {
         Prefix p = new Prefix();
-        p.pref = new Vector<>();
+        p.pref = new String[size];
         for (int i = 0; i < size; i++)
-            p.pref.add(value);
+            p.pref[i] = value;
         return p;
     }
 
     public Prefix clone() {
         Prefix n = new Prefix();
-        n.pref = (Vector) this.pref.clone();
+        n.pref = this.pref.clone();
         return n;
     }
 
     public int hashCode() {
         int h = 0;
-        for (int i = 0; i < pref.size(); i++)
-            h = MULTIPLIER * h + pref.elementAt(i).hashCode();
+        for (int i = 0; i < pref.length; i++)
+            h = MULTIPLIER * h + pref[i].hashCode();
         return h;
     }
 
     public boolean equals(Object o) {
         Prefix p = (Prefix) o;
-        for (int i = 0; i < pref.size(); i++)
-            if (!pref.elementAt(i).equals(p.pref.elementAt(i)))
+        for (int i = 0; i < pref.length; i++)
+            if (!this.pref[i].equals(p.pref[i]))
                 return false;
         return true;
     }
