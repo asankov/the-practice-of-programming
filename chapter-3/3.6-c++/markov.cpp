@@ -6,7 +6,9 @@
 #include <vector>
 
 typedef std::deque<std::string> Prefix;
-std::map<Prefix, std::vector<std::string> > statetab;
+typedef std::vector<std::string> Suffixes;
+typedef std::map<Prefix, Suffixes> State;
+State statetab;
 
 enum
 {
@@ -59,7 +61,7 @@ void generate(int nwords)
     srand(time(NULL));
     for (int i = 0; i < nwords; i++)
     {
-        std::vector<std::string> &suf = statetab[prefix];
+        Suffixes &suf = statetab[prefix];
         const std::string &w = suf[rand() % suf.size()];
         if (w == NONWORD)
             break;
