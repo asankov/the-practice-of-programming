@@ -15,3 +15,5 @@ Revise the Java version of `markov` to use an array instead of a `Vector` for th
 
 *Answer:* An array makes more sense than `Vector`, because the size is fixed and known when the object is instantiated.
 Therefore, we don't need data struct that can grow and shrink dinamically.
+
+Changes applied in [this commit](https://github.com/asankov/the-practice-of-programming/commit/a1530955650425780da796e8d04a42ceacdf275c).
