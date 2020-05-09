@@ -5,8 +5,9 @@
 #include <map>
 #include <vector>
 
+#include "structs.cpp"
+
 typedef std::deque<std::string> Prefix;
-typedef std::vector<std::string> Suffixes;
 typedef std::map<Prefix, Suffixes> State;
 State statetab;
 
@@ -46,7 +47,7 @@ void add(Prefix &prefix, const std::string &s)
 {
     if (prefix.size() == NPREF)
     {
-        statetab[prefix].push_back(s);
+        statetab[prefix].push(s);
         prefix.pop_front();
     }
     prefix.push_back(s);
@@ -63,6 +64,7 @@ void generate(int nwords)
     {
         Suffixes &suf = statetab[prefix];
         const std::string &w = suf[rand() % suf.size()];
+
         if (w == NONWORD)
             break;
         std::cout << w << " ";
