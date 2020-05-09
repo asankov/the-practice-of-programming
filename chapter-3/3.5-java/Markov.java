@@ -1,46 +1,57 @@
 package main;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StreamTokenizer;
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 import java.util.Random;
 import java.util.Vector;
+import java.util.stream.Collectors;
 
 public class Markov {
+
+    private static final Integer MAX_WORDS = 10_000;
+
     public static void main(String[] args) throws IOException {
         Chain chain = new Chain();
         chain.build(System.in);
-        chain.generate(10000);
+        chain.generate(MAX_WORDS);
     }
 }
 
 class Chain {
-    private static final int PREFIX_SIZE = 2;
+    private static final Integer PREFIX_SIZE = 2;
     private static final String NON_WORD = "\n";
-    Hashtable statetab = new Hashtable<>();
-    Prefix prefix = new Prefix(PREFIX_SIZE, NON_WORD);
-    Random rand = new Random();
+
+    private Map<Prefix, Vector<String>> statetab = new HashMap<>();
+    private Prefix prefix = Prefix.from(PREFIX_SIZE, NON_WORD);
+    private Random rand = new Random();
 
     public void build(InputStream in) throws IOException {
-        StreamTokenizer st = new StreamTokenizer(in);
+        Reader r = new BufferedReader(new InputStreamReader(in));
+        StreamTokenizer st = new StreamTokenizer(r);
 
         st.resetSyntax();
         st.wordChars(0, Character.MAX_VALUE);
         st.whitespaceChars(0, ' ');
+
         while (st.nextToken() != StreamTokenizer.TT_EOF)
-            add(st.sval);
-        add(NON_WORD);
+            this.add(st.sval);
+        this.add(NON_WORD);
     }
 
     public void generate(int words) {
+        this.prefix = Prefix.from(PREFIX_SIZE, NON_WORD);
 
-        this.prefix = new Prefix(PREFIX_SIZE, NON_WORD);
         for (int i = 0; i < words; i++) {
-            Vector s = (Vector) statetab.get(prefix);
-            int r = Math.abs(rand.nextInt() % s.size());
-            String suf = (String) s.elementAt(r);
+            Vector<String> s = statetab.get(prefix);
+            Integer r = Math.abs(rand.nextInt() % s.size());
+            String suf = s.elementAt(r);
             if (suf.equals(NON_WORD))
                 break;
             System.out.print(suf + " ");
@@ -50,10 +61,10 @@ class Chain {
     }
 
     public void add(String word) {
-        Vector suf = (Vector) statetab.get(prefix);
+        Vector<String> suf = statetab.get(prefix);
         if (suf == null) {
-            suf = new Vector();
-            statetab.put(new Prefix(prefix), suf);
+            suf = new Vector<>();
+            statetab.put(prefix.clone(), suf);
         }
         suf.addElement(word);
         prefix.pref.removeElementAt(0);
@@ -65,16 +76,20 @@ class Prefix {
 
     private static final int MULTIPLIER = 31;
 
-    public Vector pref;
+    public Vector<String> pref;
 
-    public Prefix(int size, String value) {
-        this.pref = new Vector();
+    public static Prefix from(Integer size, String value) {
+        Prefix p = new Prefix();
+        p.pref = new Vector<>();
         for (int i = 0; i < size; i++)
-            this.pref.add(value);
+            p.pref.add(value);
+        return p;
     }
 
-    public Prefix(Prefix p) {
-        this.pref = (Vector) p.pref.clone();
+    public Prefix clone() {
+        Prefix n = new Prefix();
+        n.pref = (Vector) this.pref.clone();
+        return n;
     }
 
     public int hashCode() {
