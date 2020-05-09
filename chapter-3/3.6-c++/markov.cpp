@@ -7,9 +7,7 @@
 
 #include "structs.cpp"
 
-typedef std::deque<std::string> Prefix;
-typedef std::map<Prefix, Suffixes> State;
-State statetab;
+StateMap statetab;
 
 enum
 {
@@ -47,7 +45,7 @@ void add(Prefix &prefix, const std::string &s)
 {
     if (prefix.size() == NPREF)
     {
-        statetab[prefix].push(s);
+        statetab[prefix]->push(s);
         prefix.pop_front();
     }
     prefix.push_back(s);
@@ -62,8 +60,8 @@ void generate(int nwords)
     srand(time(NULL));
     for (int i = 0; i < nwords; i++)
     {
-        Suffixes &suf = statetab[prefix];
-        const std::string &w = suf[rand() % suf.size()];
+        Suffixes *suf = statetab[prefix];
+        const std::string w = (*suf)[rand() % suf->size()];
 
         if (w == NONWORD)
             break;
