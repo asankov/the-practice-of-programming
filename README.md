@@ -27,5 +27,16 @@ The book can be bought here: https://www.amazon.de/-/en/Brian-W-Kernighan-ebook/
 #### [2.8 Trees](chapter-2/2.8-trees)
 #### [2.9 Hash Tables](chapter-2/2.9-hash-tables)
 
+### [Chapter 3: Design and Implementation](chapter-3)
+#### [3.1 The Markov Chain Algorithm](chapter-3/3.1-the-markov-chain-algorithm)
+#### [3.2 Data Structure Alternatives](chapter-3/3.2-data-structure-alternatives)
+#### [3.3 Building the Data Structure in C](chapter-3/3.3-building-the-data-structure-in-c)
+#### [3.4 Generating Output](chapter-3/3.4-generating-output)
+#### [3.5 Java](chapter-3/3.5-java)
+#### [3.6 C++](chapter-3/3.6-c++)
+#### [3.7 Awk and Perl](chapter-3/3.7-awk-and-perl)
+#### [3.8 Performance](chapter-3/3.8-performance)
+#### [3.9 Lessons](chapter-3/3.9-lessons)
+
 ## License
 This work is licensed under MIT license. For more info see [LICENSE.md](LICENSE.md)
