@@ -3,6 +3,13 @@
 #include <map>
 #include <vector>
 
+enum
+{
+    NHASH = 4098,
+};
+
+std::hash<std::string> hasher;
+
 class Suffixes
 {
 private:
@@ -40,35 +47,74 @@ public:
     }
 };
 
-typedef std::deque<std::string> Prefix;
-std::hash<std::string> hasher;
-
-// todo: make instance methods of Prefix
-int hash_prefix(Prefix p)
+class Prefix
 {
-    unsigned int h = 0;
+public:
+    std::string values[2];
+    int _size;
 
-    for (int i = 0; i < p.size(); i++)
+    int size()
     {
-        h += hasher(p.at(i));
+        return _size;
+    }
+    std::string at(int index)
+    {
+        return values[index];
+    }
+    void push_back(std::string val)
+    {
+        values[_size++] = val;
+    }
+    void pop_front()
+    {
+        if (_size == 2)
+        {
+            values[0] = values[1];
+            values[1] = std::string();
+        }
+        else if (_size == 1)
+        {
+            values[0] = std::string();
+        }
+        else if (_size == 0)
+        {
+            return;
+        }
+        _size--;
     }
 
-    return h % 4098;
-}
-
-bool prefix_equals(Prefix first, Prefix second)
-{
-    if (first.size() != second.size())
-        return false;
-
-    for (int i = 0; i < first.size(); i++)
+    int hash()
     {
-        if (first.at(i).compare(second.at(i)) != 0)
+        unsigned int h = 0;
+
+        for (int i = 0; i < size(); i++)
+        {
+            h += hasher(at(i));
+        }
+
+        return h % NHASH;
+    }
+
+    bool operator==(Prefix other)
+    {
+        if (size() != other.size())
             return false;
+
+        for (int i = 0; i < size(); i++)
+            if (at(i).compare(other.at(i)) != 0)
+                return false;
+
+        return true;
     }
 
-    return true;
-}
+    Prefix()
+    {
+        _size = 0;
+        values[0] = std::string();
+        values[1] = std::string();
+    }
+};
+
 class StateMap
 {
 private:
@@ -81,15 +127,14 @@ private:
     };
 
 public:
-    std::map<Prefix, Suffixes> _map;
-    StateMapEntry *entries[4098];
+    StateMapEntry *entries[NHASH];
 
     Suffixes *operator[](Prefix p)
     {
-        int hash = hash_prefix(p);
+        int hash = p.hash();
         for (StateMapEntry *e = entries[hash]; e != NULL; e = e->next)
         {
-            if (prefix_equals(p, *e->prefix))
+            if (p == *e->prefix)
             {
                 return e->suffixes;
             }
