@@ -13,7 +13,7 @@ How does performance change for the different structures?
 The diff is very small, since we only reference these types once or twice.
 TODO: measure performance between the two versions.
 
-### Exercise 3-6
+#### Exercise 3-6
 Write a C++ version that uses only classes and the `string` data type, but no other advanced library facilities.
 Compare it in style and speed to the STL versions.
 
