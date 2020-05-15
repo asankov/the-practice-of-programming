@@ -38,3 +38,14 @@ char *csvgetline(FILE *f, char *separator);
 ```
 
 TODO: implementations
+
+#### Exercise 4-3
+WE chose to use the static initialization provided by C as the basis of a one-time switch: 
+if a pointer is NULL on entry, initialization is performed. Another possibility is to required the user to call an explicit
+initialization function, which could include suggested initial sizes for arrays.
+Implement a version that combines the best of both. What is the role of `reset` in your implementation?
+
+*Answer:* The best of both worlds would be to give the user possibility to initialize the library with initial sizes,
+but if the user did not, we would still use the default ones (start from 1, grow to whenever necessary).
+
+TODO: implementation
