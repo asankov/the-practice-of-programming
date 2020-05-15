@@ -24,3 +24,17 @@ then write and measure their speeds.
     - this will be easier than the second, because we start spliting one by one, and count how much we've splitted.
 
 TODO: implementations
+
+#### Exercise 4-2
+Add a facility so separators can be changed 
+(a) to an arbitrary class of characters;
+(b) to different separators for different fields;
+(c) to a regular expressions (see Chapter 9).
+What should the interface look like?
+
+*Answer:* For each of these the interface would change to something like
+```c
+char *csvgetline(FILE *f, char *separator);
+```
+
+TODO: implementations
