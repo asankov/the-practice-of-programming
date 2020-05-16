@@ -48,7 +48,7 @@ Implement a version that combines the best of both. What is the role of `reset` 
 *Answer:* The best of both worlds would be to give the user possibility to initialize the library with initial sizes,
 but if the user did not, we would still use the default ones (start from 1, grow to whenever necessary).
 
-TODO: implementation #6
+*Implementation:* See this [commit](https://github.com/asankov/the-practice-of-programming/commit/e6b9cb4315c5b184011fe6a80eb44c3d6699f690).
 
 #### Exercise 4-4
 Design and implement a library for creating CSV-formatted data. The simplest version might take an array of strings
