@@ -14,6 +14,14 @@ static char **field = NULL; /* field pointers */
 static int maxfield = 0;    /* size of fields[] */
 static int nfield = 0;      /* number of fields in field[] */
 
+static int _initial_maxline = 0;  /* initial value of maxline configured by the consumer, or 0 by default */
+static int _initial_maxfield = 0; /* initial value of maxfield configured by the consumer, or 0 by default */
+
+void init(int initmaxfield, int initmaxline) /* initialize the library with proper starting values */
+{
+    maxline = _initial_maxline = initmaxline;
+    maxfield = _initial_maxfield = initmaxfield;
+}
 /* reset: set variables back to starting values */
 static void reset(void)
 {
@@ -23,7 +31,9 @@ static void reset(void)
     line = NULL;
     sline = NULL;
     field = NULL;
-    maxline = maxfield = nfield = 0;
+    maxline = _initial_maxline;
+    maxfield = _initial_maxfield;
+    nfield = 0;
 }
 
 /* endofline: check for and consume \r, \n, \r\n, or EOF */
@@ -158,6 +168,8 @@ char *csvgetline(FILE *fn, char *separator)
 int main(void)
 {
     char *line;
+
+    init(10, 10);
 
     while ((line = csvgetline(stdin, ",")) != NULL)
     {
