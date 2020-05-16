@@ -14,8 +14,6 @@ static char **field = NULL; /* field pointers */
 static int maxfield = 0;    /* size of fields[] */
 static int nfield = 0;      /* number of fields in field[] */
 
-static char fieldsep[] = ","; /* field separator chars*/
-
 /* reset: set variables back to starting values */
 static void reset(void)
 {
@@ -43,7 +41,7 @@ static int endofline(FILE *fn, int c)
 }
 
 /* advquoted: quoted field: return pointer to next separator*/
-static char *advquoted(char *p)
+static char *advquoted(char *p, char *separator)
 {
     int i, j;
 
@@ -51,7 +49,7 @@ static char *advquoted(char *p)
     {
         if (p[j] == '"' && p[++j] != '"')
         {
-            int k = strcspn(p + j, fieldsep);
+            int k = strcspn(p + j, separator);
             memmove(p + i, p + j, k);
             i += k;
             j += k;
@@ -78,7 +76,7 @@ int csvnfield(void)
 }
 
 /* split: split line into fields */
-static int split(void)
+static int split(char *separator)
 {
     char *sepp; /* pointer to temporary character */
     int sepc;
@@ -100,9 +98,9 @@ static int split(void)
             field = newf;
         }
         if (*p == '"')
-            sepp = advquoted(++p); /* skip initial quote */
+            sepp = advquoted(++p, separator); /* skip initial quote */
         else
-            sepp = p + strspn(p, fieldsep);
+            sepp = p + strspn(p, separator);
         sepc = sepp[0];
         sepp[0] = '\0'; /* terminate field */
         field[nfield++] = p;
@@ -114,7 +112,7 @@ static int split(void)
 
 /* csvgetline: get one line, grow as needed */
 /* sample input: "LU",86.25,"11/4/1998","2:19PM",+4.0625 */
-char *csvgetline(FILE *fn)
+char *csvgetline(FILE *fn, char *separator)
 {
     int c, i;
     char *newl, *news;
@@ -149,7 +147,7 @@ char *csvgetline(FILE *fn)
         line[i] = c;
     }
     line[i] = '\0';
-    if (split() == NOMEM)
+    if (split(separator) == NOMEM)
     {
         reset();
         return NULL; /* out of memory */
@@ -161,7 +159,7 @@ int main(void)
 {
     char *line;
 
-    while ((line = csvgetline(stdin)) != NULL)
+    while ((line = csvgetline(stdin, ",")) != NULL)
     {
         printf("line = '%s'\n", line);
         for (int i = 0; i < csvnfield(); i++)
