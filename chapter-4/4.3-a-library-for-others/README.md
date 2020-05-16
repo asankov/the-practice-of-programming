@@ -37,7 +37,7 @@ What should the interface look like?
 char *csvgetline(FILE *f, char *separator);
 ```
 
-TODO: implementations
+*Implementation:* See this [commit](https://github.com/asankov/the-practice-of-programming/commit/a17b9876cd918e988d383993ee0a4003d958da4b).
 
 #### Exercise 4-3
 WE chose to use the static initialization provided by C as the basis of a one-time switch: 
