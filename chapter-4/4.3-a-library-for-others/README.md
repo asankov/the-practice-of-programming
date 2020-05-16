@@ -23,7 +23,7 @@ then write and measure their speeds.
 - split up to the field requested
     - this will be easier than the second, because we start spliting one by one, and count how much we've splitted.
 
-TODO: implementations
+TODO: implementations #5
 
 #### Exercise 4-2
 Add a facility so separators can be changed 
@@ -48,11 +48,11 @@ Implement a version that combines the best of both. What is the role of `reset` 
 *Answer:* The best of both worlds would be to give the user possibility to initialize the library with initial sizes,
 but if the user did not, we would still use the default ones (start from 1, grow to whenever necessary).
 
-TODO: implementation
+TODO: implementation #6
 
 #### Exercise 4-4
 Design and implement a library for creating CSV-formatted data. The simplest version might take an array of strings
 and print them with quotes and commas. A more sophisticated version might use a format string analogous to `printf`.
 Look at Chapter 9 for some suggestions on notation.
 
-*Answer:* TODO: implementation
+*Answer:* TODO: implementation #7
