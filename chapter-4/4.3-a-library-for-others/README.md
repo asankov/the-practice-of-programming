@@ -55,4 +55,14 @@ Design and implement a library for creating CSV-formatted data. The simplest ver
 and print them with quotes and commas. A more sophisticated version might use a format string analogous to `printf`.
 Look at Chapter 9 for some suggestions on notation.
 
-*Answer:* TODO: implementation #7
+*Answer:* I build more like a prototype than a real library, but it is what it is.
+
+The interface consists of only method:
+```c
+void generate_csv(FILE *fn)
+```
+this reads from `fn`, until `EOF` and prints a word everytime it encounters `" "`. It has no notion of new lines, and multiple columns, but hey, it's just a prototype.
+
+For the interface see [`generate_csv.h`](generate_csv.h).
+
+For the implementation see [`generate_csv.c`](generate_csv.h).
