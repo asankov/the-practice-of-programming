@@ -19,3 +19,11 @@ Write a Java version of the CSV library, then compare the three implementations 
 Repackage the C++ version of the CSV code as an STL iterator.
 
 *Answer:* TODO: implementation
+
+#### Exercise 4-8
+The C++ version permits multiple independent `Csv` instances to operate concurrently without interfering,
+a benefit of encapsulating all the state in an object that can be instantiated multiple times.
+Modify the C version to achieve the same effect by replacing the global data structures with structures that are
+allocated and initialized by an explicit `csvnew` function.
+
+*Answer:* TODO: implementation
