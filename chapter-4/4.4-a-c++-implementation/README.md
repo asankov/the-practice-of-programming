@@ -7,3 +7,5 @@ See the implementation in [`csv.cpp`](csv.cpp)
 
 #### Exercise 4-5
 Enhance the C++ implementation to overload subscripting with `operator[]` so that fields can be accesses as `csv[i]`.
+
+*Answer:* Implemented directly in [`csv.cpp`](csv.cpp). See this [commit](https://github.com/asankov/the-practice-of-programming/commit/59a3bd15e0af3090a963603217589258a8c45b5a)
