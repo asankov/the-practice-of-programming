@@ -14,8 +14,8 @@ public:
     Csv(std::istream &fin = std::cin, std::string sep = ",") : fin(fin), fieldsep(sep) {}
 
     int getline(std::string &);
-    std::string getfield(int n);
     int getnfield() const { return nfield; }
+    std::string operator[](int n);
 
 private:
     std::istream &fin;              // input file pointer
@@ -28,6 +28,13 @@ private:
     int endofline(char);
     int advplain(const std::string &line, std::string &fld, int);
     int advquoted(const std::string &line, std::string &fld, int);
+};
+
+std::string Csv::operator[](int n)
+{
+    if (n < 0 || n >= nfield)
+        return "";
+    return field[n];
 };
 
 // getline: get one line, grow as needed
@@ -115,14 +122,6 @@ int Csv::advplain(const std::string &s, std::string &fld, int i)
     return j;
 }
 
-// getfield: return n-th field
-std::string Csv::getfield(int n)
-{
-    if (n < 0 || n >= nfield)
-        return "";
-    return field[n];
-}
-
 // Csvtest main: test Csv class
 int main(void)
 {
@@ -133,7 +132,7 @@ int main(void)
     {
         std::cout << "line = " << line << "\n";
         for (int i = 0; i < csv.getnfield(); i++)
-            std::cout << "field[" << i << "] = '" << csv.getfield(i) << "'\n";
+            std::cout << "field[" << i << "] = '" << csv[i] << "'\n";
     }
     return 0;
 }
