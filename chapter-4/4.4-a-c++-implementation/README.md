@@ -14,3 +14,8 @@ Enhance the C++ implementation to overload subscripting with `operator[]` so tha
 Write a Java version of the CSV library, then compare the three implementations for clarity, robustness and speed.
 
 *Answer:* TODO: implementation
+
+#### Exercise 4-7
+Repackage the C++ version of the CSV code as an STL iterator.
+
+*Answer:* TODO: implementation
