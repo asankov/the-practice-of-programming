@@ -17,3 +17,13 @@ In this chapter we will take a look at designing libraries and the problems that
 ### [4.6 Resource Management](4.6-resource-management)
 ### [4.7 Abort, Retry, Fail?](4.7-abort-retry-fail)
 ### [4.8 User Interfaces](4.8-user-interfaces)
+
+## Supplementary Reading
+- The Mythical Man Month by Frederick P. Brooks, Jr.
+- Large-Scale C++ Software Design by John Lakos
+- C Interfaces and Implementations by David Hanson
+- Rapid Development by Steve McConnell
+- Designing Visual Interfaces: Communication Oriented Techniques by Kevin Mullet and Darrell Sano
+- Designing the User Interface: Strategies for Effective Human-Computer Interaction by Ben Shneidermann
+- About Face: The Essentials of User Interface Desing by Alan Cooper
+- User Interface Design by Harold Thimbleby
