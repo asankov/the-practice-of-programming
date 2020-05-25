@@ -38,5 +38,15 @@ The book can be bought here: https://www.amazon.de/-/en/Brian-W-Kernighan-ebook/
 #### [3.8 Performance](chapter-3/3.8-performance)
 #### [3.9 Lessons](chapter-3/3.9-lessons)
 
+### [Chapter 4: Interfaces](chapter-4)
+#### [4.1 Comma-Separated Values](chapter-4/4.1-comma-separated-values)
+#### [4.2 A Prototype Library](chapter-4/4.2-a-prototype-library)
+#### [4.3 A Library For Others](chapter-4/4.3-a-library-for-others)
+#### [4.4 A C++ Implementation](chapter-4/4.4-a-c++-implementation)
+#### [4.5 Interface Principles](chapter-4/4.5-interface-principles)
+#### [4.6 Resource Management](chapter-4/4.6-resource-management)
+#### [4.7 Abort, Retry, Fail?](chapter-4/4.7-abort-retry-fail)
+#### [4.8 User Interfaces](chapter-4/4.8-user-interfaces)
+
 ## License
 This work is licensed under MIT license. For more info see [LICENSE.md](LICENSE.md)
