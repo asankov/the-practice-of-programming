@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 #define MINLEN 6
 #define BUFSIZE 10000
@@ -8,23 +9,25 @@ void strings(char *name, FILE *fn);
 
 int main(int argc, char *argv[])
 {
-    int i;
+    int i, min_len = MINLEN;
     FILE *fn;
 
-    if (argc == 1) {
-        printf("usage: strings filename");
+    if (argc == 1 || argc == 3) {
+        printf("usage: strings filename [--minlen minlen]");
         return -1;
     }
 
-    for (i = 1; i < argc; i++)
-    {
-        if ((fn = fopen(argv[i], "rb")) == NULL) {
-            printf("can't open %s", argv[i]);
-            return -1;
-        }
-        strings(argv[i], fn);
-        fclose(fn);
+    if (argc == 4) {
+        min_len = atoi(argv[3]);
     }
+
+    char *filename = argv[1];
+    if ((fn = fopen(filename, "rb")) == NULL) {
+        printf("can't open %s", filename);
+        return -1;
+    }
+    strings(filename, fn);
+    fclose(fn);
 
     return 0;
 }
