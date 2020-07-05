@@ -13,6 +13,8 @@ For the implementation, see [`strings.c`](strings.c)
 The `strings` program prints strings with `MINLEN` or more characters, which sometimes produces more output than is useful.
 Provide `strings` with an optional argument to define the minimum string length.
 
+*Answer:* Changed applied to [`strings.c`](strings.c) in [this commit](https://github.com/asankov/the-practice-of-programming/commit/4a99559bcb586c94036bc97107e21a9112c314b9).
+
 ### Exercise 5-3
 Write `vis`, which copies input to output, except that it displays non-printable bytes like backspaces, control characters,
 and non-ASCII characters as `\Xhh` where `hh` is the hexadecimal representaton of the non-printable byte.
