@@ -25,6 +25,15 @@ By contrast with `strings`, `vis` is more useful for examining inputs that conta
 ### Exercise 5-4
 What does `vis` produce if the input is `\XOA`? How could you make output of `vis` unambiguous?
 
+*Answer*:
+```
+▶ gcc vis.c -o executable && ./executable xoa.txt
+
+▶ gcc vis.c -o executable && ./executable xoa.txt --minlen 1
+xoa.txt:\XOA
+```
+It producec nothing, because the input is too short. If we set the min input to 1 (or something smaller that the actual output), then it outputs the text.
+
 ### Exercise 5-5
 Extend `vis` to process a sequence of files, fold long lines at any desired column, and remove non-printable characters entirely.
 What other features might be consistent with the role of the program?
