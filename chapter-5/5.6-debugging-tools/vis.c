@@ -2,14 +2,15 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-#define MINLEN 6
 #define BUFSIZE 10000
+
+int min_len = 6;
 
 void vis(char *name, FILE *fn);
 
 int main(int argc, char *argv[])
 {
-    int i, min_len = MINLEN;
+    int i;
     FILE *fn;
 
     if (argc == 1 || argc == 3) {
@@ -41,6 +42,7 @@ void vis(char *name, FILE *fn)
         for (i = 0; (c=getc(fn)) != EOF;)
         {
             if (!isprint(c)) {
+                printf("here");
                 sprintf(&buf[i++], "\\");
                 sprintf(&buf[i++], "X");
                 char s[3];
@@ -54,7 +56,7 @@ void vis(char *name, FILE *fn)
             if (i >= BUFSIZE)
                 break;
         }
-        if (i >= MINLEN)
+        if (i >= min_len)
             printf("%s:%.*s\n", name, i, buf);
     } while (c != EOF);
 }
