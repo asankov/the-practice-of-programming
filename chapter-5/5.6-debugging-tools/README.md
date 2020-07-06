@@ -20,6 +20,8 @@ Write `vis`, which copies input to output, except that it displays non-printable
 and non-ASCII characters as `\Xhh` where `hh` is the hexadecimal representaton of the non-printable byte.
 By contrast with `strings`, `vis` is more useful for examining inputs that contain only a few non-printable characters.
 
+*Answer:* See [`vis.c`](vis.c) added in [this commit](https://github.com/asankov/the-practice-of-programming/commit/f81c7edac11980493af906a5a9bdb1900bf9a8cf).
+
 ### Exercise 5-4
 What does `vis` produce if the input is `\XOA`? How could you make output of `vis` unambiguous?
 
