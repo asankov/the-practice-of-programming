@@ -52,7 +52,7 @@ void vis(char *name, FILE *fn)
                 sprintf(s, "%02x", c);
                 sprintf(&buf[i++], "%c", s[0]);
                 sprintf(&buf[i++], "%c", s[1]);
-                continue;
+                break;
             }
 
             buf[i++] = c;
