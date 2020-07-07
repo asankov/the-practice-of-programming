@@ -37,3 +37,6 @@ It producec nothing, because the input is too short. If we set the min input to 
 ### Exercise 5-5
 Extend `vis` to process a sequence of files, fold long lines at any desired column, and remove non-printable characters entirely.
 What other features might be consistent with the role of the program?
+
+*Answer:*
+- process a sequence of files: See the changes to [`vis.c`](vis.c) added in [this commit](https://github.com/asankov/the-practice-of-programming/commit/4cbb1e96ef3805c376d777f2d4c3f005087f2f6c).
