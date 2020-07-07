@@ -42,7 +42,6 @@ void vis(char *name, FILE *fn)
         for (i = 0; (c=getc(fn)) != EOF;)
         {
             if (!isprint(c)) {
-                printf("here");
                 sprintf(&buf[i++], "\\");
                 sprintf(&buf[i++], "X");
                 char s[3];
