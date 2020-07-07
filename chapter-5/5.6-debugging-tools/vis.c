@@ -10,25 +10,29 @@ void vis(char *name, FILE *fn);
 
 int main(int argc, char *argv[])
 {
-    int i;
     FILE *fn;
+    int num_files = argc - 1;
 
     if (argc == 1 || argc == 3) {
         printf("usage: strings filename [--minlen minlen]");
         return -1;
     }
 
-    if (argc == 4) {
+    if (argc >= 4) {
         min_len = atoi(argv[3]);
+        num_files -= 1; // because the last two args are "--minlen" and <min_len>
     }
 
-    char *filename = argv[1];
-    if ((fn = fopen(filename, "rb")) == NULL) {
-        printf("can't open %s", filename);
-        return -1;
+    for (int i = 1; i < num_files; i++) {
+        char *filename = argv[i];
+        if ((fn = fopen(filename, "rb")) == NULL) {
+            printf("can't open %s", filename);
+            return -1;
+        }
+        vis(filename, fn);
+        fclose(fn);
     }
-    vis(filename, fn);
-    fclose(fn);
+
 
     return 0;
 }
