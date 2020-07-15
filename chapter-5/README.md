@@ -15,3 +15,7 @@ Debugging is hard and there are there are many debugging techniques - from debug
 ### [5.7 Other People's Bugs](5.7-other-peoples-bugs)
 ### [5.8 Summary](5.8-summary)
 
+## Supplementary Reading
+- Writing Solid Code by Steve Maguire
+- Code Complete by Steve McConnell
+- 
