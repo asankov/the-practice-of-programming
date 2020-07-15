@@ -18,4 +18,3 @@ Debugging is hard and there are there are many debugging techniques - from debug
 ## Supplementary Reading
 - Writing Solid Code by Steve Maguire
 - Code Complete by Steve McConnell
-- 
