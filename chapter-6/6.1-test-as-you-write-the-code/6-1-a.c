@@ -30,8 +30,7 @@ int test(int in, int exp)
     return 0;
 }
 
-// factorial: we see that with faulty input, 0, -1, etc.
-// we get multiple iterations before the value is returned
+// 6-1.a This is supposed to print factorial
 int factorial(int n)
 {
     // return 0 for negative values of n
