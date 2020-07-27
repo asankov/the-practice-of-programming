@@ -33,4 +33,18 @@ For example, `fprintf` or `fwrite` will return errors if there is unsufficient m
 Check out these examples at their boundaries, then fix them as necesary according to the principles of style
 in Chapter 1 and the advice in this chapter.
 
-- **6-1** See [`6-1-a.c`](6-1-a.c). Solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/f349b9aec39b0dda02e75ab3b36541e3930a05a2)
+- **6-1.a** See [`6-1-a.c`](6-1-a.c). Solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/f349b9aec39b0dda02e75ab3b36541e3930a05a2)
+- **6-1.b** See [`6-1-b.c`](6-1-b.c). Original solution results in the following when running `6-1-b.c`:
+```
+Test 1:
+h
+e
+l
+l
+o
+Test 2:
+
+Test 3:
+[1]    31362 segmentation fault  ./executable
+```
+We get a segmentation fault when `NULL` is passed to the `print` function, because we never check whether the passed value is legit.
