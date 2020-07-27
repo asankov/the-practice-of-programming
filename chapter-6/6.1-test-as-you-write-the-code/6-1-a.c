@@ -34,6 +34,17 @@ int test(int in, int exp)
 // we get multiple iterations before the value is returned
 int factorial(int n)
 {
+    // return 0 for negative values of n
+    if (n < 0)
+    {
+        return 0;
+    }
+    // return 1 for 0! and 1!
+    if (n < 2)
+    {
+        return 1;
+    }
+
     int fac = 1;
     while (n--)
     {
