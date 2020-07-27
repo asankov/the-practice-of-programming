@@ -33,4 +33,4 @@ For example, `fprintf` or `fwrite` will return errors if there is unsufficient m
 Check out these examples at their boundaries, then fix them as necesary according to the principles of style
 in Chapter 1 and the advice in this chapter.
 
-- **6-1** See [`6-1-a.c`](6-1-a.c)
+- **6-1** See [`6-1-a.c`](6-1-a.c). Solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/f349b9aec39b0dda02e75ab3b36541e3930a05a2)
