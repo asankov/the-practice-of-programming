@@ -28,3 +28,9 @@ Check for conditions that can't or shoudln't happen, but might, because of an er
 ### Check error returns
 Always check error returned from functions.
 For example, `fprintf` or `fwrite` will return errors if there is unsufficient memory or another serious problem ocurred.
+
+#### Exercise 6-1
+Check out these examples at their boundaries, then fix them as necesary according to the principles of style
+in Chapter 1 and the advice in this chapter.
+
+- **6-1** See [`6-1-a.c`](6-1-a.c)
