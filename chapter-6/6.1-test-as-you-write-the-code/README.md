@@ -47,4 +47,4 @@ Test 2:
 Test 3:
 [1]    31362 segmentation fault  ./executable
 ```
-We get a segmentation fault when `NULL` is passed to the `print` function, because we never check whether the passed value is legit.
+We get a segmentation fault when `NULL` is passed to the `print` function, because we never check whether the passed value is legit. Also, we get a new line outputed when such is not part of the input (Test 2) - this is because we use `do-while` loop, instead of a `while` loop.
