@@ -1,0 +1,30 @@
+## Chapter 6: Testing
+
+## Section 6.1 Test as You Write the Code
+**Summary:** The earlier a problem is found, the better.
+If we test our code as we are writing it, we may catch some bugs early and we have at least one test run before the code has even been compiled.
+Finding and fixing the bugs while writing the code will save us the time to troubleshoot later and fix bugs in an already working and deployed system.
+### Test code at its boundaries
+One approach is to test small pieces of code at their boundary conditions.
+This include `for` or `while` loops, conditional statements, etc.
+Very often the bug includes at the bondary condition. When the input is empty, full, only one, etc.
+If our code works for the boundary inputs it will probably work for the normal ones as well.
+Boundary condition checking is effective for finding off-by-one errors. It becomes second nature with time and practice.
+It helps eliminate some bugs, but not all of them.
+### Test pre- and post-conditions
+Verify that the code works for input which do not make sense. Basically, this means to validate your inputs
+and return a sensible value (`0`, `[]`, `NULL`, etc.), even if the inputs are non-sensible.
+Bogus inputs should not be ignored as they may lead to ugly crashed down the road.
+### Use assertions
+Use assertions to validate your inputs. C/C++ provide an assertion facility in `<assert.h>` that lets you do:
+```c
+assert(n > 0)
+```
+If that fails, the program will abort with a useful message, pointing at the callee (not the called function itself).
+This will help us identify who is at fault.
+However, because it aborts the program it is to be used only in extreme situations in which recovering is impossible.
+### Program defensively
+Check for conditions that can't or shoudln't happen, but might, because of an error somewhere else.
+### Check error returns
+Always check error returned from functions.
+For example, `fprintf` or `fwrite` will return errors if there is unsufficient memory or another serious problem ocurred.
