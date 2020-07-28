@@ -85,3 +85,15 @@ M - second half of alphabet
 a - z - l - m - %
 ```
 which means the program is working fine for upper-case letter, but not for lower-case.
+The solution resulted in:
+```
+A - first half of alphabet
+Z - second half of alphabet
+L - first half of alphabet
+M - second half of alphabet
+a - first half of alphabet
+z - second half of alphabet
+l - first half of alphabet
+m - second half of alphabet
+```
+See the solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/e464dd266dc63d0928374b91bae5bb7b515aeada)
