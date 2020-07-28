@@ -37,6 +37,8 @@ int test(char *src, char *expected, int n)
 
 void strncpy2(char *t, char *s, int n)
 {
+    if (t == NULL || s == NULL)
+        return;
     while (n > 0 && *s != '\0')
     {
         *t = *s;
