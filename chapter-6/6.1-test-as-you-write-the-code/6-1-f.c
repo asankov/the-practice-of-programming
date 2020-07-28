@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 void character(char c);
 
@@ -17,6 +18,7 @@ int main() {
 void character(char c)
 {
     printf("%c - ", c);
+    c = toupper(c);
     if (c >= 'A' && c <= 'Z') {
         if (c <= 'L')
             printf("first half of alphabet\n");
