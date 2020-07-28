@@ -110,3 +110,17 @@ Fri Dec 31 23:58:27 EST 1999\n\0
 Suppose your program calls `ctime`. How would you write your code to defend againts flawed implementation?
 
 *Answer:* Proper testing of the function can be done by pattern/regex matching. E.g. we can strip away the parts we don't care about and validate that we have a proper year, proper time (hour not bigger than 23, minutes and seconds not bigger than 59, etc.). We can defend our program from faulty implementation by checking the result of the function. The simplest check could be a `NULL` check. More comprehensive testing involves the kinds of tests described in the previous sentence.
+- **6-2.c** Describe how you would test a calendar program that prints output like this:
+```
+    January 2000
+  S  M Tu  W Th  F  S
+                    1
+  2  3  4  5  6  7  8
+  9 10 11 12 13 14 15
+ 16 17 18 19 20 21 22
+ 23 24 25 26 27 28 29
+ 30 31
+```
+*Answer:* Firstly, we can validate that the month name is a valid one, comparing it to a list of all valid month names.
+Secondly, we can validate the rows that says which day of the week it is, because that is always the same.
+Finally, we can validate that all the numbers are in order.
