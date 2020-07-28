@@ -61,3 +61,4 @@ The original solution produces this output when runnung `6-1-d.c`:
 [1]    42710 segmentation fault  ./executable
 ```
 This is because the function does not check whether the input is not `NULL`.
+Solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/5824a5424f72c2479d65a8d8304d404437d1937d)
