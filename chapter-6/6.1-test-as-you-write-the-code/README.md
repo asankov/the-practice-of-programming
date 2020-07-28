@@ -76,3 +76,12 @@ After applying the solution:
 1 is equal to 1.
 ```
 See the solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/853b52f3998d978d1ff1fc524a85c82490bed629)
+- **6-1.f** A character class test. See [`6-1-f.c`](6-1-f.c). Running the original solution resulted in:
+```
+A - first half of alphabet
+Z - second half of alphabet
+L - first half of alphabet
+M - second half of alphabet
+a - z - l - m - %
+```
+which means the program is working fine for upper-case letter, but not for lower-case.
