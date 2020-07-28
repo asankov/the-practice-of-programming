@@ -125,4 +125,5 @@ Suppose your program calls `ctime`. How would you write your code to defend agai
 Secondly, we can validate the rows that says which day of the week it is, because that is always the same.
 Finally, we can validate that all the numbers are in order.
 - **6-2.d** What other time boundaries can you think of in systems that you use, and how would you test to see whether they are handled correctly.
+
 *Answer:* This is context specific, but I think that one way of validating the time boundaries is having a clear definiton of what those boundaries are, what mistake can happen and what mistake should never happen and have tests for those cases.
