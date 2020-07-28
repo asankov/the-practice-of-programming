@@ -62,3 +62,10 @@ The original solution produces this output when runnung `6-1-d.c`:
 ```
 This is because the function does not check whether the input is not `NULL`.
 Solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/5824a5424f72c2479d65a8d8304d404437d1937d)
+- **6-1.e** A numerical comparison. See [`6-1-e.c`](6-1-e.c). Running the origin solution results in:
+```
+1 is smaller than 2.
+1 is greater than 0.
+1 is smaller than 1.
+```
+This is because we don't handle the quality of the two numbers.
