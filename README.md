@@ -11,7 +11,7 @@ The book can be bought here: https://www.amazon.de/-/en/Brian-W-Kernighan-ebook/
 ### [Chapter 3: Design and Implementation](chapter-3)
 ### [Chapter 4: Interfaces](chapter-4)
 ### [Chapter 5: Debugging](chapter-5)
-### Chapter 6: Testing
+### [Chapter 6: Testing](chapter-6)
 ### Chapter 7: Performance
 ### Chapter 8: Portability
 ### Chapter 9: Notation
