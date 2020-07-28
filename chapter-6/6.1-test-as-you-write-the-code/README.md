@@ -55,3 +55,9 @@ We get a segmentation fault when `NULL` is passed to the `print` function, becau
 [1]    40929 segmentation fault  ./executable
 ```
 This is because we don't check if the input is NULL. Solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/d2ddb1169f251ccbfcfe92ff3dfedf6c0549685b)
+- **6-1.d** Another string copy, which attempts to copy `n` characters from `s` to `t`.
+The original solution produces this output when runnung `6-1-d.c`:
+```
+[1]    42710 segmentation fault  ./executable
+```
+This is because the function does not check whether the input is not `NULL`.
