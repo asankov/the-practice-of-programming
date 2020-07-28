@@ -13,6 +13,8 @@ void compare(int i, int j)
 {
     if (i > j)
         printf("%d is greater than %d.\n", i, j);
-    else
+    else if (i < j)
         printf("%d is smaller than %d.\n", i, j);
+    else
+        printf("%d is equal to %d.\n", i, j);
 }
