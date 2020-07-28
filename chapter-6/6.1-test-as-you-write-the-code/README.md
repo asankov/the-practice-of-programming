@@ -69,3 +69,10 @@ Solution in this [commit](https://github.com/asankov/the-practice-of-programming
 1 is smaller than 1.
 ```
 This is because we don't handle the quality of the two numbers.
+After applying the solution:
+```
+1 is smaller than 2.
+1 is greater than 0.
+1 is equal to 1.
+```
+See the solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/853b52f3998d978d1ff1fc524a85c82490bed629)
