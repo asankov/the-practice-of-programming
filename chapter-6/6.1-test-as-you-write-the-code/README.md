@@ -97,3 +97,9 @@ l - first half of alphabet
 m - second half of alphabet
 ```
 See the solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/e464dd266dc63d0928374b91bae5bb7b515aeada)
+#### Exercise 6-2
+As we are writing this book in late 1998, [the Year 2000 problem](https://en.wikipedia.org/wiki/Year_2000_problem) looms as perhaps the biggest boundary condition problem ever.
+- **6-2.a** What dates would you use to check whether a system is likely to work in the year 2000?
+Supposing the tests are expensive to perform, in what order would you do your tests after trying January 1, 2000 itself?
+
+*Answer:* The most obvious first choice is `January 1, 2000`. The next ones - maybe `January 2, 2000` is another good choice. The next one should be offset in a sensible way - by a number that corresponds with the number of bits that when added to the date go to the next boundary condition.
