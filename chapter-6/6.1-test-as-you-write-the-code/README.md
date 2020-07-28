@@ -54,4 +54,4 @@ We get a segmentation fault when `NULL` is passed to the `print` function, becau
 ```
 [1]    40929 segmentation fault  ./executable
 ```
-This is because we don't check if the input is NULL.
+This is because we don't check if the input is NULL. Solution in this [commit](https://github.com/asankov/the-practice-of-programming/commit/d2ddb1169f251ccbfcfe92ff3dfedf6c0549685b)
