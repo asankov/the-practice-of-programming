@@ -26,6 +26,9 @@ int main()
 
 int test(char *src)
 {
+    if (src == NULL)
+        return 0;
+
     char *n = (char *)malloc(100 * sizeof(char));
     strcpy2(n, src);
     return strcmp(n, src) != 0;
