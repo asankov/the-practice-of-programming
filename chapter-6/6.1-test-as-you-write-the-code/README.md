@@ -103,3 +103,10 @@ As we are writing this book in late 1998, [the Year 2000 problem](https://en.wik
 Supposing the tests are expensive to perform, in what order would you do your tests after trying January 1, 2000 itself?
 
 *Answer:* The most obvious first choice is `January 1, 2000`. The next ones - maybe `January 2, 2000` is another good choice. The next one should be offset in a sensible way - by a number that corresponds with the number of bits that when added to the date go to the next boundary condition.
+- **6-2.b** How would you test the standart function `ctime`, which returns a string representation of the date in this form:
+```
+Fri Dec 31 23:58:27 EST 1999\n\0
+```
+Suppose your program calls `ctime`. How would you write your code to defend againts flawed implementation?
+
+*Answer:* Proper testing of the function can be done by pattern/regex matching. E.g. we can strip away the parts we don't care about and validate that we have a proper year, proper time (hour not bigger than 23, minutes and seconds not bigger than 59, etc.). We can defend our program from faulty implementation by checking the result of the function. The simplest check could be a `NULL` check. More comprehensive testing involves the kinds of tests described in the previous sentence.
