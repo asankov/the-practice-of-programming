@@ -54,3 +54,8 @@ Then I would run the program on the files and compare the input to the expected 
 ### Exercise 6-4
 Design and implement a version of `freq` that measures the frequencies of other types of data values, such as 32-bit integers or floating-point numbers.
 Can you make one version of the program handle a variety of types elegantly?
+
+*Answer:* The desing of the program will be similar to the one we have now. The difference would be in reading the input.
+When doing so we would need to handle the case where the char is a number and read until a delimiter is found.
+Then parse the number and increment its value in the character counter store.
+TODO: implementation
