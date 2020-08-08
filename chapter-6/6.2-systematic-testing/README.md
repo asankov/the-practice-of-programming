@@ -46,6 +46,11 @@ It is hard to achieve 100% coverage, because there are always some "can't be rea
 #### Exercise 6-3
 Describe how you would test `freq`.
 
+*Answer:* `freq` is a program that outputs the times each character is found in a files.
+See [`freq.c`](freq.c)
+I would start by defining test files and the expected output for each of them.
+Then I would run the program on the files and compare the input to the expected one.
+
 ### Exercise 6-4
 Design and implement a version of `freq` that measures the frequencies of other types of data values, such as 32-bit integers or floating-point numbers.
 Can you make one version of the program handle a variety of types elegantly?
