@@ -2,7 +2,7 @@
 
 ### 1.3 Consistency and Idioms
 
-#### Exercise 1-7
+### Exercise 1-7
 Rewrite these C/C++ excerpts more clearly:
 ```c
 if (istty(stdin)) ;
@@ -43,7 +43,7 @@ for (k = 0; k < 5; k++)
 Here, I moved the incrementation of `k` to the last part of the `for` loop definition, as this is the idiomatic choice.
 Moreove, I moved `x += dx` into the body of the for loop, since this way is even clearer where `dx` is coming from and what happens with `x`. Also, now the `for` loop looks like the standart `for` that a seasoned programmer would recognise at a glance.
 
-#### Exercise 1-8
+### Exercise 1-8
 Identify the errors in this Java fragment and repair it by rewriting with an idiomatic loop.
 ```java
 int count = 0;

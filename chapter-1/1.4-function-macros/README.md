@@ -2,7 +2,7 @@
 
 ### 1.4 Function Macros
 
-#### Exercise 1-9
+### Exercise 1-9
 Identify the problem with this macro definition:
 ```c
 #define ISDIGIT(c) ((c >= '0') && (c <= '9'>)) ? 1 : 0

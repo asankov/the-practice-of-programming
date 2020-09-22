@@ -7,7 +7,7 @@ Using libraries and high-level programming language can help us speed up develop
 complete control of what you program does, and not knowing what happens under the hood. This is a trade-off that needs to be considered.
 Finally, writing production-ready code involves iteration and experimentation.
 
-#### Exercise 3-8
+### Exercise 3-8
 We have seen versions of the Markov program in a wide variaty of languages, including Scheme, Tcl, Prolog, Python, Generic Java, ML and Haskell;
 each presents its own challenges and advantages. Implement the program in your favourite language and compare its general flavor and performance.
 

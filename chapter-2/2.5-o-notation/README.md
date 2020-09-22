@@ -2,7 +2,7 @@
 
 ### 2.5. O-Notation
 
-#### Exercise 2.3
+### Exercise 2.3
 What are some input sequences that might cause a quicksort implementation to display worst-case behaviour?
 Try to find some that provoke the library version into running slowly. 
 Automate the process so that you can specify and perform a large number of experiments easily.
@@ -22,7 +22,7 @@ equal but one, arrays sorted in reverse order)
 
 The implentation can be found in [`quick_sort_worst_cases.c`](quick_sort_worst_cases.c).
 
-#### Exercise 2.4
+### Exercise 2.4
 Design and implement an algorithm that will sort an array of *n* integers as slowly as possible.
 You have to play fair: the algorithm must make progress and eventually terminate, and the implementation
 must not cheat with tricks like time-wasting loops. What is the complexity of your algorithm as a function of *n*?

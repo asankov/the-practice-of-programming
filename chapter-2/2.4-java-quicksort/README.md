@@ -2,7 +2,7 @@
 
 ### 2.4. A Java Quicksort
 
-#### Exercise 2.2
+### Exercise 2.2
 Our Java quicksort does a fair amount of type conversion as items are cast from their original type (like Integer) to Object and back again.
 Experiment with a version of QuickSort.sort that uses the specific type being sorted, to estimate what
 performance penalty is incurred by type conversions.

@@ -2,7 +2,7 @@
 
 ### Chapter 2.8 Trees
 
-#### Exercise 2.11.
+### Exercise 2.11.
 Compare the performance of `lookup` and `nrlookup`. How expensive is recursion compared to iteration?
 
 *Answer:*
@@ -19,7 +19,7 @@ This means that with this amount of data, the iterative function is ~33% faster 
 However, these results are not to be taken as conclusive, because the amount of data we test it is really small,
 and I suspect that the way we measure time is not entirely accurate as well.
 
-#### Exercise 2.12.
+### Exercise 2.12.
 Use in-order traversal to create a sort routine. What time complexity does it have? 
 Under what conditions might it behave poorly? How does its performance compare to our quicksort and a library version?
 
@@ -30,7 +30,7 @@ The performance depends on the structure of the tree. For a properly structured 
 perform in the same manner. 
 TODO: execute a proper performance tests againts the list quicksort.
 
-#### Exercise 2.13.
+### Exercise 2.13.
 Devise and implement a set of tests for verifying that the tree routines are correct.
 
 *Answer:* The solution can be found at [`tests.c`](tests.c). I went with the same appoarch as in Exercise 2-10.

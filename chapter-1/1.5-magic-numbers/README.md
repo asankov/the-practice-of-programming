@@ -3,7 +3,7 @@
 ### 1.5 Magic Numbers
 **Summary:** Magic numbers should be extracted into constants/enum to easy readability and to prevent having to change a lot of code if something changes (for example an array size).
 
-#### Exercise 1-10
+### Exercise 1-10
 How would you rewrite these definitions to minimize potential errors?
 ```c
 #define FT2METER  0.3048

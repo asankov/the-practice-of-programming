@@ -2,7 +2,7 @@
 
 ### 2.7 Lists
 
-#### Exercise 2-7
+### Exercise 2-7
 Implement some of the other list operations: copy, merge, split, insert before of after specific item.
 How do the two insertion operations differ in difficulty? How much can you use the routines we've written,
 and how much must you create yourself?
@@ -21,13 +21,13 @@ together via the `addend` function. Neat.
 The make this point to the next from the original list, and the previous one points to the new element to be inserted.
 In this function we don't reuse any of the other ones, because it's just pointer changes and comparisons.
 
-#### Exercise 2-8
+### Exercise 2-8
 Write recursive and iterative versions of `reverse`, which reverses a list. 
 Do not create new list items; re-use the existing ones.
 
 *Answer:* The solution can be found in [`chapter-2/2.7-lists/reverse.c`](reverse.c)
 
-#### Exercise 2-9
+### Exercise 2-9
 Write a generic List type for C. The easiest way is to have each list item hold a `void*` that points to the data.
 Do the same for C++ by defining a template and for Java by defining a class that holds lists of type Object.
 What are the strenght and weaknesses of the various languages for this job?
@@ -42,7 +42,7 @@ consumers would implement their own list, instead of using this generic one.
 - Java solution - in Java this is pretty much implemented with `List<T>` and all of its implementations,
 so I'd rather not spend time reimplementing those or implementing wrappers around them.
 
-#### Exercise 2-10
+### Exercise 2-10
 Devise and implement a set of tests for verifying that the list routines you write are correct.
 Chapter 6 discusses strategies for testing.
 

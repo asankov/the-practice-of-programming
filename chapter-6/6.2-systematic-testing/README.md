@@ -43,7 +43,7 @@ The main idea of testing is that every statement of our program has been execute
 That is why it is important to measure test coverage and to be sure that this coverage it as higher as possible.
 It is hard to achieve 100% coverage, because there are always some "can't be reached" statements, and because by just varying the inputs it's hard to get to all parts of our program.
 
-#### Exercise 6-3
+### Exercise 6-3
 Describe how you would test `freq`.
 
 *Answer:* `freq` is a program that outputs the times each character is found in a files.

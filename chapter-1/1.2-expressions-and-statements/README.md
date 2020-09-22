@@ -2,7 +2,7 @@
 
 ### 1.2 Expressions and Statemenents
 
-#### Exercise 1-4
+### Exercise 1-4
 Improve each of these fragments:
 ```c
 if (!(c == 'y' || c == 'Y'))
@@ -46,7 +46,7 @@ bit = val & 1;
 ```
 This is simpler and obvious.
 
-#### Exercise 1-5
+### Exercise 1-5
 What is wrong with this excerpt?
 ```c
 int read(int *ip) {
@@ -62,7 +62,7 @@ The thing that is wrong with the call to `insert` comes from that problem with `
 Calls `insert` with the value, read from stdin, and assigns them to `val` and `ch` respectively. This may lead to nasty bugs
 and more hours of debugging.
 
-#### Exercise 1-6
+### Exercise 1-6
 List all the different outputs this could produce with various orders of evaluation:
 ```
 n = 1;

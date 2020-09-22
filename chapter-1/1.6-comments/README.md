@@ -3,7 +3,7 @@
 ### 1.6 Comments
 **Summary:** Comment should clarify, not confuse. They should agree with the code, not contradict it. They should describe why, not how, and should not repeat the code. They should not be everywhere, just where this clarifications are needed.
 
-#### Exercise 1-11
+### Exercise 1-11
 Comment on these comments *(answers inline)*:
 ```c
 void dict::insert(string& w)

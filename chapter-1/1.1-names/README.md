@@ -2,7 +2,7 @@
 
 ### 1.1 Names
 
-#### Exercise 1-1
+### Exercise 1-1
 Comment on the choice of names and values in the following code:
 ```c
 #define TRUE 0
@@ -23,7 +23,7 @@ if ((ch = getchar()) == EOF)
 ```
 The other version may lead to double negation like `if (!not_eof) { /* code */ }` which is more confusing than the simple `if (eof) { /* code */}`.
 
-#### Exercise 1-2
+### Exercise 1-2
 Improve this function.
 ```c
 int smaller(char *s, char *t) {
@@ -48,7 +48,7 @@ Improvements:
 - documentation - what is not clear from the name (which string is smaller that which) is clear by the doc string
 - code - reversed the condition to fit the name and docs. This way the function is different than the original, but it does what it says
 
-#### Exercise 1-3
+### Exercise 1-3
 Read this code aloud.
 ```c
 if ((falloc(SMRHHSHSCRTCH, S_IFEXT|0644, MAXRODDHSH)) < 0)

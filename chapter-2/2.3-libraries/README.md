@@ -2,7 +2,7 @@
 
 ### 2.3 Libraries
 
-#### Exercise 2.1. 
+### Exercise 2.1. 
 Quicksort is most naturally expressed recursively. Write it iteratatively and compare the two versions.
 
 *Answer:* Definetelly, the more natural way was the recursive one. I had to put a lot more thinking ang Googling into the iterative implementation.

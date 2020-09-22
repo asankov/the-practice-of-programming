@@ -37,5 +37,5 @@ It runs what is after `try` with the input from the first column and expects the
 
 When new functionality is added new tests cases should be added as well. Test cases should not be deleted. If a bug is found, first a test case that fails should be written to reproduce the bug, and then the bug should be fixed. From then on, we will know that this bug would not occurr again.
 
-#### Exercise 6-5
+### Exercise 6-5
 Design a test suite for `printf`, using as many mechanical aids as possible.

@@ -3,7 +3,7 @@
 ### Section 3.5 Java
 **Summary:** Let's rewrite these stuff in [Java](Markov.java)!
 
-#### Exercise 3-4
+### Exercise 3-4
 Revise the Java version of `markov` to use an array instead of a `Vector` for the prefix in the `State` class.
 
 *Answer:* An array makes more sense than `Vector`, because the size is fixed and known when the object is instantiated.
