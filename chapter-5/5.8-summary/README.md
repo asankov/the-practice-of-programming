@@ -1,6 +1,7 @@
 # Chapter 5: Debugging
 
 ## Section 5.8 Summary
+
 Whether we like debugging or not, we will have to do it regullarly. That is why it's important to write good code with fewer bugs.
 
 Once we see a bug, the first thing to do is think how it could have happened and where it could have come from.

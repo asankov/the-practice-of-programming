@@ -1,6 +1,7 @@
 # Chapter 5: Debugging
 
 ## Section 5.5 Non-reproducible Bugs
+
 **Summary:** Something a bug is just hard to reproduce.
 
 Not being able to reproduce the bug every time is nasty, but the fact itself gives you useful information -
@@ -14,9 +15,10 @@ When the program works for one person, but not for another debugging is hard, as
 The reason prorably is in the difference in the environments - files present, environment variables, etc.
 
 ### Exercise 5-1
+
 Write a version of `malloc` and `free` that can be used for debugging storage-management problems.
 One approach is to check the entire workspace on each call of `malloc` and `free`;
 another is to write logging information that can be processed by another program.
 Either way, add markers to the beggining and end of each allocated block to detect overruns at either end.
 
-*Answer:* TODO
+_Answer:_ TODO
