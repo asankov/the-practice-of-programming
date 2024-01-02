@@ -1,6 +1,7 @@
-## Chapter 4: Interfaces
+# Chapter 4: Interfaces
 
-### Section 4.7 Abort, Retry, Fail?
+## Section 4.7 Abort, Retry, Fail?
+
 **Summary:** Handling errors is an important part of building a library/writing a program.
 Functions should have a way to signal to the consumer that something went wrong.
 This could be done via the return value of the function, or an exception (is such are available in the language of choice).
