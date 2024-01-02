@@ -1,3 +1,3 @@
-## Chapter 2: Algorithms and Data structures
+# Chapter 2: Algorithms and Data structures
 
-### 2.1 Searching
+## 2.1 Searching
