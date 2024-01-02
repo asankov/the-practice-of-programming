@@ -1,7 +1,9 @@
-## Chapter 3: Design and Implementation
+# Chapter 3: Design and Implementation
 
-### 3.2 Data Structure Alternatives
+## 3.2 Data Structure Alternatives
+
 **Summary:** While choosing data structures for our program we need to take into account a few things:
+
 - which structure fits naturally for the work that must be done
 - how big of an input we are expecting
 - what is the desired speed we want our program to run with
