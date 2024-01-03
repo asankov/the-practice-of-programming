@@ -50,6 +50,23 @@ The book can be bought from [Amazon](https://www.amazon.de/-/en/Brian-W-Kernigha
   - [2.9 Hash Tables](chapter-2/2.9-hash-tables)
     - [x] 2-17
 - [Chapter 3: Design and Implementation](chapter-3)
+  - [3.1 The Markov Chain Algorithm](chapter-3/3.1-the-markov-chain-algorithm)
+  - [3.2 Data Structure Alternatives](chapter-3/3.2-data-structure-alternatives)
+  - [3.3 Building the Data Structure in C](chapter-3/3.3-building-the-data-structure-in-c)
+  - [3.4 Generating Output](chapter-3/3.4-generating-output)
+    - [x] 3-1
+    - [] 3-2
+    - [] 3-3
+  - [3.5 Java](chapter-3/3.5-java)
+    - [x] 3-4
+  - [3.6 C++](chapter-3/3.6-c++)
+    - [x] 3-5
+    - [] 3-6
+  - [3.7 AWK and Perl](chapter-3/3.7-awk-and-perl)
+    - [] 3-7
+  - [3.8 Performance](chapter-3/3.8-performance)
+  - [3.9 Lessons](chapter-3/3.9-lessons)
+    - [x] 3-8
 - [Chapter 4: Interfaces](chapter-4)
 - [Chapter 5: Debugging](chapter-5)
 - [Chapter 6: Testing](chapter-6)
