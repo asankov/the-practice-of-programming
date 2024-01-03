@@ -16,3 +16,9 @@ Good way to write bug free code is to generate the code. If we do that based on 
 - [6.6 Tips for Testing](6.6-tips-for-testing)
 - [6.7 Who Does The Testing](6.7-who-does-the-testing)
 - [6.8 Testing the Markov Program](6.8-testing-the-markov-program)
+
+## Supplementary Reading
+
+- Software-Practice and Experience
+- Programming Pearls
+- More Programming Pearls
