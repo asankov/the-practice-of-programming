@@ -41,7 +41,8 @@ _Answer:_ The solutions can be found at [`generic_lists`](generic_lists).
 - The C solution is really weird, because in order to achieve generic list, we must use `void*`.
   That means that the type-checking responsibility is switched from the compiler, to the consumer of the list.
   Also, while trying it off it produces some warning of the sort `[-Wincompatible-pointer-types]`.
-  So it should be compiled with flags to ignore this warning. All in all, I think that it is better if the
+  So it should be compiled with flags to ignore this warning.
+  All in all, I think that it is better if the
   consumers would implement their own list, instead of using this generic one.
 - C++ solution - TODO
 - Java solution - in Java this is pretty much implemented with `List<T>` and all of its implementations,
