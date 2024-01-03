@@ -13,9 +13,9 @@ Finally, writing production-ready code involves iteration and experimentation.
 We have seen versions of the Markov program in a wide variaty of languages, including Scheme, Tcl, Prolog, Python, Generic Java, ML and Haskell;
 each presents its own challenges and advantages. Implement the program in your favourite language and compare its general flavor and performance.
 
-_Answer:_ Finally some [Golang](golang/main/main.go)! 🎉
+_Answer:_ Finally some [Go](go/main/main.go)! 🎉
 
-Golang, being based on C++ means that the solution looks very much like the initial C++ solution that used `std::vector`, `std::queue`, etc. For key of the map, I had to use the array of string, not the wrapping `Prefix` struct, because
-Golang does not like very much custom types as map keys.
+Go, being based on C++ means that the solution looks very much like the initial C++ solution that used `std::vector`, `std::queue`, etc. For key of the map, I had to use the array of string, not the wrapping `Prefix` struct, because
+Go does not like very much custom types as map keys.
 
 The other parts of the solution were pretty straight-forward and similar to what we have already done for the other languages.
