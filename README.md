@@ -99,6 +99,25 @@ The book can be bought from [Amazon](https://www.amazon.de/-/en/Brian-W-Kernigha
   - [5.7 Other Peoples Bugs](chapter-5/5.7-other-peoples-bugs)
   - [5.8 Summary](chapter-5/5.8-summary)
 - [Chapter 6: Testing](chapter-6)
+  - [6.1 Test As You Write the Code](chapter-6/6.1-test-as-you-write-the-code)
+    - [x] 6-1
+    - [x] 6-2
+  - [6.2 Systematic Testing](chapter-6/6.2-systematic-testing)
+    - [x] 6-3
+    - [] 6-4
+  - [6.3 Test Automation](chapter-6/6.3-test-automation)
+    - [] 6-5
+  - [6.4 Test Scaffolds](chapter-6/6.4-test-scaffolds)
+    - [] 6-6
+    - [] 6-7
+    - [] 6-8
+    - [] 6-9
+  - [6.5 Stress Tests](chapter-6/6.5-stress-tests)
+    - [x] 6-10
+  - [6.6 Tips for Testing](chapter-6/6.6-tips-for-testing)
+  - [6.7 Who Does the Testing](chapter-6/6.7-who-does-the-testing)
+  - [6.8 Testing the Markov Program](chapter-6/6.8-testing-the-markov-program)
+  - [6.9 Summary](chapter-6/6.9-summary)
 - [Chapter 7: Performance](chapter-7)
 - Chapter 8: Portability
 - Chapter 9: Notation
