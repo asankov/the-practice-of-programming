@@ -68,6 +68,22 @@ The book can be bought from [Amazon](https://www.amazon.de/-/en/Brian-W-Kernigha
   - [3.9 Lessons](chapter-3/3.9-lessons)
     - [x] 3-8
 - [Chapter 4: Interfaces](chapter-4)
+  - [4.1 Comma-Separated Values](chapter-4/4.1-comma-separated-values)
+  - [4.2 A Prototyp Library](chapter-4/4.2-a-prototype-library)
+  - [4.3 A Library For Others](chapter-4/4.3-a-library-for-others)
+    - [] 4-1
+    - [x] 4-3
+    - [x] 4-2
+    - [x] 4-4
+  - [4.X](chapter-4/4.4-a-c++-implementation)
+    - [x] 4-5
+    - [] 4-6
+    - [] 4-7
+    - [] 4-8
+  - [4.5 Interface Principles](chapter-4/4.5-interface-principles)
+  - [4.6 Resource Management](chapter-4/4.6-resource-management)
+  - [4.7 Abort, Retry, Fail](chapter-4/4.7-abort-retry-fail)
+  - [4.8 User Interfaces](chapter-4/4.8-user-interfaces)
 - [Chapter 5: Debugging](chapter-5)
 - [Chapter 6: Testing](chapter-6)
 - [Chapter 7: Performance](chapter-7)
