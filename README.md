@@ -85,6 +85,19 @@ The book can be bought from [Amazon](https://www.amazon.de/-/en/Brian-W-Kernigha
   - [4.7 Abort, Retry, Fail](chapter-4/4.7-abort-retry-fail)
   - [4.8 User Interfaces](chapter-4/4.8-user-interfaces)
 - [Chapter 5: Debugging](chapter-5)
+  - [5.1 Debuggers](chapter-5/5.1-debuggers)
+  - [5.2 Good Clues, Easy Bugs](chapter-5/5.2-good-clues-easy-bugs)
+  - [5.3 No Clues, Hard Bugs](chapter-5/5.3-no-clues-hard-bugs)
+  - [5.4 Last Resorts](chapter-5/5.4-last-resorts)
+  - [5.5 Non-Reproducible Bugs](chapter-5/5.5-non-reproducible-bugs)
+    - [] 5-1
+  - [5.6 Debugging Tools](chapter-5/5.6-debugging-tools)
+    - [x] 5-2
+    - [x] 5-3
+    - [x] 5-4
+    - [x] 5-5
+  - [5.7 Other Peoples Bugs](chapter-5/5.7-other-peoples-bugs)
+  - [5.8 Summary](chapter-5/5.8-summary)
 - [Chapter 6: Testing](chapter-6)
 - [Chapter 7: Performance](chapter-7)
 - Chapter 8: Portability
