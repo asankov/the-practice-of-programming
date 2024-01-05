@@ -119,6 +119,20 @@ The book can be bought from [Amazon](https://www.amazon.de/-/en/Brian-W-Kernigha
   - [6.8 Testing the Markov Program](chapter-6/6.8-testing-the-markov-program)
   - [6.9 Summary](chapter-6/6.9-summary)
 - [Chapter 7: Performance](chapter-7)
+  - [7.1 A Bottleneck](chapter-7/README.md#71-a-bottleneck)
+  - [7.2 Timing and Profiling](chapter-7/README.md#72-timing-and-profiling)
+    - [x] 7-2
+    - [] 7-3
+  - [7.3 Strategies for Speed](chapter-7/README.md#73-strategies-for-speed)
+  - [7.4 Tuning the Code](chapter-7/README.md#74-tuning-the-code)
+    - [] 7-4
+    - [] 7-5
+  - [7.5 Space Efficiency](chapter-7/README.md#75-space-efficiency)
+  - [7.6 Estimation](chapter-7/README.md#76-estimation)
+    - [] 7-6
+    - [] 7-7
+    - [] 7-8
+  - [7.7 Summary](chapter-7/README.md#77-summary)
 - Chapter 8: Portability
 - Chapter 9: Notation
 
