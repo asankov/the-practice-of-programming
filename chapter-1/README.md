@@ -9,3 +9,11 @@
 - [1.5 Magic Numbers](1.5-magic-numbers)
 - [1.6 Comments](1.6-comments)
 - [1.7 Why Bother?](1.7-why-bother)
+
+## Supplementary Reading
+
+- _The Elements of Style_ by Strunk and White
+- _The Elements of Programming Style_ by Brian Kernighan and P. J. Plauger
+- _Writing Solid Code_ by Steve Maguire
+- _Code Complete_ by Steve McConnel
+- _Expert C Programming: Deep C Secrets_ by Peter van der Linden

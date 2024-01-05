@@ -11,3 +11,11 @@
 - [2.7 Lists](2.7-lists)
 - [2.8 Trees](2.8-trees)
 - [2.9 Hash Tables](2.9-hash-tables)
+
+## Supplementary Reading
+
+- _Algorithms_ books by Bob Sedgewicks
+- _Algotithms in C++_ by Bob Sedgewicks
+- _The Art of Computer Programming_ by Don Knuth
+- _Design and Validation of Computer Protocols_ by Gerard Holzmann
+- _Software - Practice and Experience_ by Jon Bentley and Doug McIlroy

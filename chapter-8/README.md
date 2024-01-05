@@ -158,8 +158,8 @@ In the long run, the benfits of the intersection approach outweight the drawback
 
 ## Supplementary Reading
 
-- The C Programming Language by Brian Kernighan and Dennis Ritchie
-- C: A Reference Manual by Sam Harbison and Guy Steele
-- The Java Language Specification by James Gosling, Bill Joy and Guy Steele
-- Advanced Programming in Unix Environment by Rich Stevens
+- _The C Programming Language_ by Brian Kernighan and Dennis Ritchie
+- _C: A Reference Manual_ by Sam Harbison and Guy Steele
+- _The Java Language Specification_ by James Gosling, Bill Joy and Guy Steele
+- _Advanced Programming in Unix Environment_ by Rich Stevens
 - "On holy wars and a plea for peace" by Danny Cohen (article)

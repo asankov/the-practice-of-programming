@@ -19,3 +19,12 @@ similarities between each of them.
 - [3.7 Awk and Perl](3.7-awk-and-perl)
 - [3.8 Performance](3.8-performance)
 - [3.9 Lessons](3.9-lessons)
+
+## Supplementary Reading
+
+- _Generic Programming and the STL_ by Matthew Austern
+- _The C++ Programming Language_ by Bjarne Stroustrup
+- _The Java Programming Language_ by Ken Arnold and James Gosling
+- _Programming Perl_ by Larry Wall, Tom Christansen and Randal Schwartz
+- _Design Patterns: Elements of Reusable Object-Oriented Software_ by Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides
+- _Computer Recreations_, Scientific American Magazine (article)

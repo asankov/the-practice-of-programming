@@ -19,6 +19,6 @@ Good way to write bug free code is to generate the code. If we do that based on 
 
 ## Supplementary Reading
 
-- Software-Practice and Experience
-- Programming Pearls
-- More Programming Pearls
+- _Software - Practice and Experience_ by Jon Bentley and Doug McIlroy
+- _Programming Pearls_ by Jon Bentley
+- _More Programming Pearls_ by Jon Bentley

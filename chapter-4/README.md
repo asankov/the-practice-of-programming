@@ -23,11 +23,11 @@ In this chapter we will take a look at designing libraries and the problems that
 
 ## Supplementary Reading
 
-- The Mythical Man Month by Frederick P. Brooks, Jr.
-- Large-Scale C++ Software Design by John Lakos
-- C Interfaces and Implementations by David Hanson
-- Rapid Development by Steve McConnell
-- Designing Visual Interfaces: Communication Oriented Techniques by Kevin Mullet and Darrell Sano
-- Designing the User Interface: Strategies for Effective Human-Computer Interaction by Ben Shneidermann
-- About Face: The Essentials of User Interface Desing by Alan Cooper
-- User Interface Design by Harold Thimbleby
+- _The Mythical Man Month_ by Frederick P. Brooks, Jr.
+- _Large-Scale C++ Software Design_ by John Lakos
+- _C Interfaces and Implementations_ by David Hanson
+- _Rapid Development_ by Steve McConnell
+- _Designing Visual Interfaces: Communication Oriented Techniques_ by Kevin Mullet and Darrell Sano
+- _Designing the User Interface: Strategies for Effective Human-Computer Interaction_ by Ben Shneidermann
+- _About Face: The Essentials of User Interface Desing_ by Alan Cooper
+- _User Interface Design_ by Harold Thimbleby

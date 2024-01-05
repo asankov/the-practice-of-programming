@@ -238,8 +238,8 @@ Sometimes we care about compute optimizations and we trade memory for compute po
 
 ## Supplementary Reading
 
-- Software - Practice and Experience
-- Programming Pearls by Jon Bentley
-- More Programming Pearls by Jon Bentley
-- Inner Loops by Rick Booth
-- Computer Organization and Design: The Hardware/Software Interface by John Hennesy and David Patterson
+- _Software - Practice and Experience_ by Jon Bentley and Doug McIlroy
+- _Programming Pearls_ by Jon Bentley
+- _More Programming Pearls_ by Jon Bentley
+- _Inner Loops_ by Rick Booth
+- _Computer Organization and Design: The Hardware/Software Interface_ by John Hennesy and David Patterson
