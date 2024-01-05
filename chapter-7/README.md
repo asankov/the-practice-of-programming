@@ -50,6 +50,8 @@ Whether or not your system has a `time` command, use `clock` or `getTime` to wri
 Compare its times to a wall clock.
 How does other activity on the machine affect the timings?
 
+_Answer:_ [Here](./7-2/main.go).
+
 ### Exercise 7-3
 
 In the first profile, `strchr` was called 48,350,000 times and `strncmp` only 46,180,000.
